@@ -11,11 +11,12 @@ catch
 	#add packages that are needed
 	Pkg.add.(["RCall", "RData", "StatsBase", "Compat", "Random", "Distributions", "Plots", "LinearAlgebra"])
 	Pkg.add.(["Random", "DataFrames", "CSV", "Combinatorics", "SHA", "JLD2", "StatsPlots", "Distributed", "FastaIO"])
-	Pkg.add.(["Measurements", "LightXML", "Statistics", "PyPlot", "ArgParse"])
+	Pkg.add.(["Measurements", "LightXML", "Statistics", "PyPlot", "ArgParse", "Interact", "Mux"])
 	using Pkg, StatsBase, Compat, Random, Distributions, Plots, LinearAlgebra
 	using Combinatorics, Random, LinearAlgebra, Base.Iterators, SHA
 	using JLD2, CSV, RData, DataFrames, StatsPlots, Distributed, FastaIO
-	using Measurements, LightXML, Statistics, PyPlot, ArgParse
+	using Measurements, LightXML, Statistics, PyPlot, ArgParse, Interact, Mux
+
 
 end
 
