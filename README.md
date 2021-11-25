@@ -1,4 +1,4 @@
-# model_shiny.jl
+# julia_shiny_model18.jl
 Local Interactive Gene Drive Model
 
 
