@@ -1,6 +1,7 @@
 # julia_shiny_model18.jl
 Local Interactive Gene Drive Model
 
+Needs at least Julia v1.5 and Plots v1.19
 
 # ReadMe
 
