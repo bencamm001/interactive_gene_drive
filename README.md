@@ -15,4 +15,4 @@ This script creates an interactive gene drive model at localhost:8000.
 ## Quick Guide
 The first time running the script will take some time to install necessary Julia packages. 
 
-![](misc/gene_drive_model.png)
+![](gene_drive_model.png)
