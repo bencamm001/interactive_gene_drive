@@ -5,7 +5,7 @@ try
 	using Pkg, StatsBase, Compat, Random, Distributions, Plots, LinearAlgebra
 	using Combinatorics, Random, LinearAlgebra, Base.Iterators, SHA
 	using JLD2, CSV, RData, DataFrames, StatsPlots, Distributed, FastaIO
-	using Measurements, LightXML, Statistics, PyPlot, ArgParse
+	using Measurements, LightXML, Statistics, PyPlot, ArgParse, Interact, Mux
 	using Pkg
 catch
 	#add packages that are needed
