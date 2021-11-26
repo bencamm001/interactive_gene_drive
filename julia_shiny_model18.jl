@@ -1211,7 +1211,7 @@ run_model_post = function(; pop_input = 100000, pops_input = 1, indiv_input = 3,
                        dominance_input = 0.0, fitness_input = 0.0, conversion_input = 1.0, resistance_input = 0.0, drive_freq = 0.001, resfreq_input = 0.1,
                        migrates_input = 1e-3, iterations_input = 1)
 
-pyplot()
+#pyplot()
 ps = repeat([Plots.plot(1, label = "")], pops_input)
 
 global h1, ps
