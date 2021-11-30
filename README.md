@@ -9,7 +9,7 @@ This script creates an interactive gene drive model at localhost:8000.
 
 ## Quick Install
 ```
-/path/to/julia -i /path/to/julia_shiny_model18.jl
+/path/to/julia -i /path/to/interactive_gene_drive_model.jl
 ```
 
 
