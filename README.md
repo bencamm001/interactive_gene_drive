@@ -9,9 +9,9 @@ This script creates an interactive gene drive model at localhost:8000.
 
 ## Quick Install
 ```
-/path/to/julia -i /path/to/interactive_gene_drive_model.jl
+/path/to/julia -i /path/to/gene_drive_model_interact_script.jl
 ```
-
+Then access GUI through http://localhost:8000/ on your web browser
 
 ## Quick Guide
 The first time running the script will take some time to install necessary Julia packages. 
