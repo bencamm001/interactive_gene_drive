@@ -3649,3 +3649,11 @@ ui = dom"div"(mp);
 WebIO.webio_serve(page("/", req -> ui), 8000);
 
 
+
+run(`python3 -m webbrowser http://localhost:8000`)
+
+
+##
+##
+
+
