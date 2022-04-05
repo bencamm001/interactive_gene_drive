@@ -3542,7 +3542,6 @@ end
 
 ####
 
-
 using PyPlot
 using JLD2
 using DataFrames
@@ -3557,7 +3556,7 @@ gr(size = (500,400)) #local
 
 mp = @manipulate throttle= 0.1 for  zygotic = widget(Dict("Post-Zygotic" => 1, "Pre-Zygotic" => 2), label="Timing"),
 
-                                    popsi = Widgets.slider((1:1:3), value = 1, label = "Number of Populations"),
+                                    popsi = Widgets.slider((1:1:2), value = 1, label = "Number of Populations"),
                                     popi = Widgets.slider((1:1:7), value = 0.0, label = "Population size (1e-value-)"),
                                     gensi = Widgets.slider((10:10:500), value = 100, label = "Number of Generations"),
                                     convi = Widgets.slider((0:0.01:1.0), value = 0.0, label = "Conversion Efficiency"),
@@ -3625,15 +3624,28 @@ mp = @manipulate throttle= 0.1 for  zygotic = widget(Dict("Post-Zygotic" => 1, "
 
 end
 
-@layout! mp vbox(hbox(pad(1em, :zygotic)),
-                 hbox(pad(1em, :popsi), pad(1em, :popi), pad(1em, :gensi)),
-                 hbox(pad(1em, :convi), pad(1em, :inbreeding), pad(1em, :migon), pad(1em, :migrants)),
-                 hbox(pad(1em, :fitnesscost), pad(1em, :exposurerate1), pad(1em, :exposurerate2)),
-                 hbox(pad(1em, :resistance), pad(1em, :resfreq1), pad(1em, :resfreq2)),
-                 hbox(pad(1em, :dominance), pad(1em, :drivefreq), pad(1em, :iterations)),
+# @layout! mp vbox(hbox(pad(1em, :zygotic)),
+#                  hbox(pad(1em, :popsi), pad(1em, :popi), pad(1em, :gensi)),
+#                  hbox(pad(1em, :convi), pad(1em, :inbreeding), pad(1em, :migon), pad(1em, :migrants)),
+#                  hbox(pad(1em, :fitnesscost), pad(1em, :exposurerate1), pad(1em, :exposurerate2)),
+#                  hbox(pad(1em, :resistance), pad(1em, :resfreq1), pad(1em, :resfreq2)),
+#                  hbox(pad(1em, :dominance), pad(1em, :drivefreq), pad(1em, :iterations)),
+
+#                  observe(_))
+
+# ui = dom"div"(mp);
+# WebIO.webio_serve(page("/", req -> ui), 8000);
+
+
+@layout! mp vbox(hbox(pad(1em, :zygotic), :migon),
+					hbox(
+                 	  vbox(:popsi, :convi, :fitnesscost, :resistance, :dominance),
+				 	  vbox(:popi, :inbreeding, :exposurerate1, :resfreq1, :drivefreq),
+				 	  vbox(:gensi, :migrants, :exposurerate2, :resfreq2, :iterations)),
 
                  observe(_))
 
 ui = dom"div"(mp);
 WebIO.webio_serve(page("/", req -> ui), 8000);
+
 
