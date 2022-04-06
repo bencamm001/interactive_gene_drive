@@ -16,7 +16,7 @@ The script will open your web browser to http://localhost:8000/. This uses pytho
 ## Quick Guide
 The first time running the script will take some time to install necessary Julia packages. 
 
-Prezygotic/Postzygotic buttons switch between Pre- and Post-zygotix gene drive systems.
+*Prezygotic/Postzygotic* buttons switch between Pre- and Post-zygotix gene drive systems.
 
 Migration switch turns migration on or off
 
