@@ -16,39 +16,39 @@ The script will open your web browser to http://localhost:8000/. This uses pytho
 ## Quick Guide
 The first time running the script will take some time to install necessary Julia packages. 
 
-*Prezygotic/Postzygotic* buttons switch between Pre- and Post-zygotix gene drive systems.
+**Prezygotic/Postzygotic** buttons switch between Pre- and Post-zygotix gene drive systems.
 
-Migration switch turns migration on or off
+**Migration** switch turns migration on or off
 
-Number of populations sets the number of populations to simulate, between 1 and 2.
+**Number of populations** sets the number of populations to simulate, between 1 and 2.
 
-Population size sets the number of indiviudals in the populations, in terms of 1x10^value.
+**Population size** sets the number of indiviudals in the populations, in terms of 1x10^value.
 
-Number of Generations sets how many generations to simulate.
+**Number of Generations** sets how many generations to simulate.
 
-Conversion Efficiency is the rate at which the drive converts wild-type (green dashed line).
+**Conversion Efficiency** is the rate at which the drive converts wild-type (green dashed line).
 
-Inbreeding is the level of inbreeding in the populations.
+**Inbreeding** is the level of inbreeding in the populations.
 
-Migration rate is the percentage of gene flow between the two populations, in terms of 1x10^value.
+**Migration Rate** is the percentage of gene flow between the two populations, in terms of 1x10^value.
 
-Selection Coefficient is the fitness cost associated with having the drive construct.
+**Selection Coefficient** is the fitness cost associated with having the drive construct.
 
-Exposure rate 1 is the percentage of population 1 (target) under selection. (set to 1 if fitness cost is universal).
+**Exposure rate 1** is the percentage of population 1 (target) under selection. (set to 1 if fitness cost is universal).
 
-Exposure rate 2 is the percentage of population 1 (neighour) under selection. (set to 1 if fitness cost is universal).
+**Exposure rate 2** is the percentage of population 1 (neighour) under selection. (set to 1 if fitness cost is universal).
 
-Resistance level is how resistant the resistace allele (red dashed line) is to the drive. (think of it as the conversion effieicny for the resistance allele).
+**Resistance level** is how resistant the resistace allele (red dashed line) is to the drive. (think of it as the conversion effieicny for the resistance allele).
 
-Resistance Freqeucny 1 is the initial frequency of the resistance allele in population 1 (target).
+**Resistance Freqeucny 1** is the initial frequency of the resistance allele in population 1 (target).
 
-Resistance Freqeucny 2 is the initial frequency of the resistance allele in population 2 (neighbour).
+**Resistance Freqeucny 2** is the initial frequency of the resistance allele in population 2 (neighbour).
 
-Degree of dominance is how the selection coefficient is expressed in heterozygotes. (0 is recessive, 0.5 is additive and 1 is dominant)
+**Degree of dominance** is how the selection coefficient is expressed in heterozygotes. (0 is recessive, 0.5 is additive and 1 is dominant)
 
-Drive Frequency is the initial frequency of the gene drive in the target population.
+**Drive Frequency** is the initial frequency of the gene drive in the target population.
 
-Iterations is how many times each simulation is performed, in terms of 1x10^value.
+**Iterations** is how many times each simulation is performed, in terms of 1x10^value.
 
 The solid blue line is the allele frequency of the drive, the green dashed line is the wild-type allele frequency and the red dashed line is the resistance allele frequency.
 
