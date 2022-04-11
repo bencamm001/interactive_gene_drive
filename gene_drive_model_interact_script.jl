@@ -3651,7 +3651,7 @@ ui = dom"div"(mp);
 WebIO.webio_serve(page("/", req -> ui), 8001);
 
 
-# sleep(2)
+sleep(2)
 
 run(`python3 -m webbrowser http://localhost:8001`)
 
