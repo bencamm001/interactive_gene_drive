@@ -3571,8 +3571,8 @@ mp = @manipulate throttle= 0.1 for  zygotic       = Widgets.widget(Dict("Post-Zy
                                     resfreq1      = Widgets.slider((0:0.01:0.7), value = 0.0, label = "Resistance Frequency 1"),
                                     resfreq2      = Widgets.slider((0:0.01:0.7), value = 0.0, label = "Resistance Frequency 2"),
                                     migrants      = Widgets.slider((-1.0:-1.0:-5.0), value = 0.0, label = "Migration Rate"),
-                                    migon         = Widgets.dropdown(([true, false]), value = false, label = "Migration?"),
-                                    rerun         = Widgets.dropdown(["yes", "no"], value = "no", label = "Refresh Model"),
+                                    migon         = Widgets.widget(Dict("On" => true, "Off" => false), label="Migration"),
+                                    rerun         = Widgets.widget(Dict("No" => "no", "Yes" => "yes"), label="Refresh"),
                                     iterations    = Widgets.slider((0:1:1), value = 0.0, label = "10 ^ Iterations")
         if rerun == "yes"
             # println("hello")
