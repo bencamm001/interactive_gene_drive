@@ -3448,7 +3448,7 @@ for iter in 1:iterations_input
         ps[popu] = Plots.plot(ps[popu], transpose(all1[:,:,popu]),
                 #annotate = [(30, 0.3, text("Pressure = $(pressure[popu])", 8)),
                 #            (30, 0.1, text("Env = $(env[popu])", 8))],
-                legend = :topleft,
+                legend = :bottomright,
                 xlab = "Generation",
                 ylab = "Frequency",
                 guidefontsize= 9,
@@ -3461,6 +3461,9 @@ for iter in 1:iterations_input
                 width = 1.5,
 				color = [1,2,3]',
                 label = "")
+
+				Plots.plot!([0 0 0], [0 0 0], c = "white", label = ["Maximum Frequency = $(round(maximum(all1[1,:,popu]),digits=2))" "Final Frequency = $(round(all1[1,end,popu], digits = 2))" "Time to Maximum Frequency = $(findfirst(all1[1,:,popu] .== maximum(all1[1,:,popu])))"])
+
 
             #     #plotting population size
             # Plots.plot!(total_pop1[:,:,popu] ./ max_pop,
@@ -3488,7 +3491,7 @@ for iter in 1:iterations_input
 
 
 	#plot all plots
-	h1 = Plots.plot(ps..., xlim = (0,gens), ylim = (0,1.05), reuse = true, label = "", size = ((600 + ((pops > 1) * 600)),(400 + ((pops > 2) * 400))))
+	h1 = Plots.plot(ps..., xlim = (0,gens), ylim = (0,1.05), reuse = true, size = ((600 + ((pops > 1) * 600)),(400 + ((pops > 2) * 400))))
 	# Plots.annotate!(50, 0.5, popsize1[1])
 
 
