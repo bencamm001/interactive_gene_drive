@@ -1689,6 +1689,9 @@ for iter in 1:iterations_input
 				color = [1,2,3]',
                 label = "")
 
+				Plots.plot!([0 0 0], [0 0 0], c = "white", label = ["Maximum Frequency = $(round(maximum(all1[1,:,popu]),digits=2))" "Final Frequency = $(round(all1[1,end,popu], digits = 2))" "Time to Maximum Frequency = $(findfirst(all1[1,:,popu] .== maximum(all1[1,:,popu])))"])
+
+
             #     #plotting population size
             # Plots.plot!(total_pop1[:,:,popu] ./ max_pop,
             #     label = "",
