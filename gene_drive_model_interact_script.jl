@@ -1720,7 +1720,7 @@ for iter in 1:iterations_input
 
 
     #plot all plots
-	h1 = Plots.plot(ps..., xlim = (0,gens), ylim = (0,1.05), reuse = true, label = "", size = ((600 + ((pops > 1) * 600)),(400 + ((pops > 2) * 400))))
+	h1 = Plots.plot(ps..., xlim = (0,gens), ylim = (0,1.05), reuse = true, size = ((600 + ((pops > 1) * 600)),(400 + ((pops > 2) * 400))))
     # Plots.annotate!(50, 0.5, popsize1[1])
 
 
