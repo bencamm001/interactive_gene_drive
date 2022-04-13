@@ -1675,7 +1675,7 @@ for iter in 1:iterations_input
         ps[popu] = Plots.plot(ps[popu], transpose(all1[:,:,popu]),
                 #annotate = [(30, 0.3, text("Pressure = $(pressure[popu])", 8)),
                 #            (30, 0.1, text("Env = $(env[popu])", 8))],
-                legend = :topleft,
+                legend = :bottomright,
                 xlab = "Generation",
                 ylab = "Frequency",
                 guidefontsize= 9,
