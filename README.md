@@ -4,6 +4,7 @@ Local Interactive Gene Drive Model
 Needs at least Julia v1.5 and Plots v1.19
 
 Alternatively, access the model remotely at http://45.113.233.124:8888/notebooks/Gene%20Drive%20Model.ipynb.
+(p/w is qwerty)
 
 If it appears broken, `cell->run all` to refresh the model.
 
