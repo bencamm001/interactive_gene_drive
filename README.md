@@ -21,7 +21,7 @@ The script will open your web browser to http://localhost:8001/. This uses pytho
 ## Quick Guide
 The first time running the script will take some time to install necessary Julia packages. 
 
-**Prezygotic/Postzygotic** buttons switch between Pre- and Post-zygotix gene drive systems.
+**Prezygotic/Postzygotic** buttons switch between Pre- and Post-zygotic gene drive systems.
 
 **Migration** switch turns migration on or off
 
@@ -31,23 +31,23 @@ The first time running the script will take some time to install necessary Julia
 
 **Number of Generations** sets how many generations to simulate.
 
-**Conversion Efficiency** is the rate at which the drive converts wild-type (green dashed line).
+**Conversion Efficiency** is the rate at which the gene drive converts wild-type.
 
 **Inbreeding** is the level of inbreeding in the populations.
 
 **Migration Rate** is the percentage of gene flow between the two populations, in terms of 1x10^value.
 
-**Selection Coefficient** is the fitness cost associated with having the drive construct.
+**Selection Coefficient** is the fitness cost associated with having the gene drive construct.
 
 **Exposure rate 1** is the percentage of population 1 (target) under selection. (set to 1 if fitness cost is universal).
 
-**Exposure rate 2** is the percentage of population 1 (neighour) under selection. (set to 1 if fitness cost is universal).
+**Exposure rate 2** is the percentage of population 1 (neighbour) under selection. (set to 1 if fitness cost is universal).
 
-**Resistance level** is how resistant the resistace allele (red dashed line) is to the drive. (think of it as the conversion effieicny for the resistance allele).
+**Resistance level** is how resistant the resistance allele (red dashed line) is to the gene drive. (think of it as the conversion effieicny for the resistance allele).
 
-**Resistance Freqeucny 1** is the initial frequency of the resistance allele in population 1 (target).
+**Resistance Frequency 1** is the initial frequency of the resistance allele in population 1 (target).
 
-**Resistance Freqeucny 2** is the initial frequency of the resistance allele in population 2 (neighbour).
+**Resistance Frequency 2** is the initial frequency of the resistance allele in population 2 (neighbour).
 
 **Degree of dominance** is how the selection coefficient is expressed in heterozygotes. (0 is recessive, 0.5 is additive and 1 is dominant)
 
